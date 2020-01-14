@@ -6,10 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cursos.component.css']
 })
 export class CursosComponent implements OnInit {
-
+  cursos: String[] = ['JAVA','PYTHON','RUBY','JAVASCRIPT']; 
   constructor() { }
-
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }
