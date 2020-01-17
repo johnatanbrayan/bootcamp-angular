@@ -4,12 +4,10 @@ import { CursosService } from './cursos/cursos.service';
 import { CursosComponent } from './cursos/cursos.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-// RECOMMENDED
-import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 
 import { AppComponent } from './app.component';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -19,10 +17,9 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule, 
-    BrowserAnimationsModule,
+    FormsModule,
     BsDatepickerModule.forRoot(),
-
+    BrowserAnimationsModule,
   ],
   providers: [CursosService],
   bootstrap: [AppComponent,DataBindingComponent]
