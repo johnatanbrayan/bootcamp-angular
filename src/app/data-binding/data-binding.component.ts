@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { getFullYear } from 'ngx-bootstrap/chronos/public_api';
 
 @Component({
     selector: 'app-data-binding',
@@ -9,9 +10,11 @@ export class DataBindingComponent implements OnInit{
 
     ngOnInit() {
         this.myDateValue = new Date();
+        console.log(this.myDateValue);
     }
 
     onDateChange(newDate: Date) {
         console.log(newDate);
+        
     }
 }

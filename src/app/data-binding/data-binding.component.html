@@ -30,7 +30,10 @@
             [minDate]="minDate"
             [maxDate]="maxDate"
             #dp="bsDatepicker"
-            bsDatepicker [(bsValue)]="myDateValue">
+            bsDatepicker [(bsValue)]="myDateValue"
+            [bsConfig] = "{ minMode : 'year', containerClass: 'theme-red' }"
+            >
+            <!-- [bsConfig]="{ containerClass: 'theme-orange' }" -->
     </div>
   </div>
 </div>
