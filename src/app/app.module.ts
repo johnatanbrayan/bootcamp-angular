@@ -1,3 +1,4 @@
+import { EventBindingComponent } from './event-binding/event-binding.component';
 import { FormsModule } from '@angular/forms';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { CursosService } from './cursos/cursos.service';
@@ -13,7 +14,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   declarations: [
     AppComponent,
     CursosComponent,
-    DataBindingComponent
+    DataBindingComponent,
+    EventBindingComponent,
   ],
   imports: [
     BrowserModule,
@@ -22,6 +24,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
   ],
   providers: [CursosService],
-  bootstrap: [AppComponent,DataBindingComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

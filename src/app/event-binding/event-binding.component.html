@@ -1,0 +1,27 @@
+<section class="m-5">
+    <button class="btn btn-danger" [class.highlight]="isClick == true" (click)="onClick($event)">Me click</button>
+    <br><br>
+
+    <h1>Event Binding</h1>
+
+    <label class="mr-2" for="test">Insira um número: </label>
+    <input type="text" name="test" id="test" (keyup)="onKeyUp($event.target.value)" 
+    (keyup.enter)="salvaValor(varLocalReferencia.value)"
+    (blur)="salvaValor(varLocalReferencia.value)"
+    #varLocalReferencia>
+    
+    <br><br>
+    <p>Valor atual: {{valorAtual}}</p>
+    <p>Valor salvo: {{valorSalvo}}</p>
+
+    <h2>Two Way Binding</h2>
+    <p>Meu nome é {{pessoa.nome}}, e tenho {{pessoa.idade}}.</p>
+
+    <br>
+    <label class="mr-2" for="name">Qual o seu nome: </label>
+    <input type="text" id="name" [(ngModel)]="pessoa.nome">
+
+    <label class="mx-2" for="age">Sua idade: </label>
+    <input type="text" id="age" [(ngModel)]="pessoa.idade">
+    
+</section>

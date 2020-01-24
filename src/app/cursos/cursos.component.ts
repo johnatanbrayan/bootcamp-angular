@@ -10,8 +10,8 @@ export class CursosComponent {
   cursos: string[];
 
   constructor(
-    private cursosService: CursosService) { 
-  this.cursos = this.cursosService.getCursos();
+    private banana: CursosService) { 
+    this.cursos = this.banana.getCursos();
   }
 
 }
